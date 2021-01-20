@@ -1,0 +1,39 @@
+﻿<Window x:Class="PrimeNumberApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrimeNumberApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Text="1. Úloha:"></TextBlock>
+        <ComboBox x:Name="cbUlohaJedna">
+            <ComboBoxItem>Menší než deset</ComboBoxItem>
+            <ComboBoxItem>Obsahuje právě 2 jedničky</ComboBoxItem>
+            <ComboBoxItem>Dvojciferná prvočísla do třiceti</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="UlohaJednaStart" Click="UlohaJednaStart_Click">Spustit úlohu jedna</Button>
+        <TextBlock Text="2. Úloha:"></TextBlock>
+        <ComboBox x:Name="cbUlohaDva" >
+            <ComboBoxItem>Menší než deset</ComboBoxItem>
+            <ComboBoxItem>Obsahuje právě 2 jedničky</ComboBoxItem>
+            <ComboBoxItem>Dvojciferná prvočísla do třiceti</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="UlohaDvaStart" Click="UlohaDvaStart_Click">Spustit úlohu dva</Button>
+        <TextBlock Text="3. Úloha:"></TextBlock>
+        <ComboBox x:Name="cbUlohaTri" >
+            <ComboBoxItem>Menší než deset</ComboBoxItem>
+            <ComboBoxItem>Obsahuje právě 2 jedničky</ComboBoxItem>
+            <ComboBoxItem>Dvojciferná prvočísla do třiceti</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="UlohaTriStart" Click="UlohaTriStart_Click">Spustit úlohu tři</Button>
+
+
+        <TextBlock x:Name="FirstOutput" Text="Výpis první úlohy: "></TextBlock>
+
+
+        <TextBlock x:Name="SecondOutput" Text="Výpis druhé úlohy: "></TextBlock>
+        <TextBlock x:Name="ThirdOutput" Text="Výpis třetí úlohy: "/>
+    </StackPanel>
+</Window>
